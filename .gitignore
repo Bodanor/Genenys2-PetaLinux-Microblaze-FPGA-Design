@@ -1,0 +1,10 @@
+*.bit
+*.mcs
+*.xsa
+*.txt
+*.cache
+*.runs
+*.gen
+*.hw
+*.ip_user_files
+*.xpr

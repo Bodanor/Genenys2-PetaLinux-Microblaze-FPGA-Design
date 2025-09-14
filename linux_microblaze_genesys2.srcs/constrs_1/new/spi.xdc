@@ -1,0 +1,6 @@
+set_property INTERNAL_VREF 0.75 [get_iobanks 33]
+set_property INTERNAL_VREF 0.75 [get_iobanks 34]
+set_property BITSTREAM.CONFIG.SPI_BUSWIDTH 4 [current_design]
+set_property CONFIG_MODE SPIx4 [current_design]
+set_property BITSTREAM.CONFIG.SPI_32BIT_ADDR YES [current_design]
+set_property BITSTREAM.CONFIG.CONFIGRATE 50 [current_design]
