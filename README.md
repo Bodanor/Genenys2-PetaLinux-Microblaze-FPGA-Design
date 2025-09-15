@@ -8,23 +8,20 @@
 
 
 <br />
-<div align="center">
 <h3 align="center">Genesys 2 Kintex-7 Petalinux FPGA</h3>
 
   <p align="center">
     This is the fpga design for the Petalinux build on the Genesys 2
     Kintex-7 from Digilent based on Vivado 2025.1
-
-    > [!WARNING]
-    > This is only the FPGA project side of Petalinux and will not build it !!!. It only generates the necessary files for Petalinux which are the bitstream and the exported hardware. Therefore this is not the main repo that is used to generate Linux. In fact, this repo is only a submodule for the main one that holds the Petalinux Project. Please refer to the
-    [Genesys2 Petalinux Project](https://github.com/Bodanor/Genesys2-Petalinux-Project) repo in oder to buld Petalinux !
-  
-  <br />
-    <a href="https://github.com/Bodanor/Genenys2-PetaLinux-Microblaze-FPGA-Design/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
-    &middot;
-    <a href="https://github.com/Bodanor/Genenys2-PetaLinux-Microblaze-FPGA-Design/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
   </p>
-</div>
+
+  > [!WARNING]
+  > This is only the FPGA project side of Petalinux and will not build it !!!. It only generates the necessary files for Petalinux which are the bitstream and the exported hardware. Therefore this is not the main repo that is used to generate Linux. In fact, this repo is only a submodule for the main one that holds the Petalinux Project. Please refer to the
+  [Genesys2 Petalinux Project](https://github.com/Bodanor/Genesys2-Petalinux-Project) repo in oder to buld Petalinux !
+
+  <a href="https://github.com/Bodanor/Genenys2-PetaLinux-Microblaze-FPGA-Design/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
+  &middot;
+  <a href="https://github.com/Bodanor/Genenys2-PetaLinux-Microblaze-FPGA-Design/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
 
 
 
