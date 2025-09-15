@@ -61,7 +61,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+![alt text][product-screenshot]
 
 The goal of this project is for developers to be able to generate a base design for the board that should make Linux boot. From that point, developers are free to do whatever comes to their mind.
 
@@ -87,7 +87,7 @@ For the others, follow the instructions bellow to generate the project in order 
 
 * **<ins>Having the Digilent board files installed in Vivado for the Genesys 2 Kintex-7** </ins>
 
-  Digilent provides boards files to ease ease the design inside Vivado. Yes this makes it easier for sure, but in that case we only need those boards files for the constraint files. Later on, I'll probably include the constraints in a seperate files inside the project but for now, vivado uses the one provided by digilent in the board files.
+  Digilent provides boards files to ease the design inside Vivado. Yes this makes it easier for sure, but in that case we only need those boards files for the constraint files. Later on, I'll probably include the constraints in a seperate files inside the project but for now, vivado uses the one provided by digilent in the board files.
 
   In order to install those, download or clone the [digilent board repo file](https://github.com/Digilent/vivado-boards). Then copy all eveything that is inside the **new/boards_files** folder to :
   ```
@@ -133,12 +133,13 @@ In order for petalinux to be build, it needs to have a way to know what hardware
 Click on the top menu **File** -> **Export** --> **Export hardare**
 ![alt text](images/export.png)
 
-A new window should appear asking you what the outpout should contain. In our case, we want petalinux to have access to the bitstream also. Therefore, we must toggle the **include bitstream/binary** button and click on next as this :
-![alt text](images/export_2.png).
+A new window should appear asking you what the output should contain. In our case, we want petalinux to have access to the bitstream also. Therefore, we must toggle the **include bitstream/binary** button and click on next. You can give it whatever name you want
+
+![alt text](images/export_2.png)
 
 ## Results
 
-We are now done. In fact, inside the folder where you cloned this repository, you should now see a file called **system.xsa**. This is the only file that Petalinux needs in order to build linux and create the .MCS file containing all the images needed to boot Linux *(FSBL, U-boot, Kernel, rootfs, Device-tree)*
+We are now done. In fact, inside the folder where you cloned this repository, you should now see a file called **<the_name_provided_in_the_last_step>.xsa**. This is the only file that Petalinux needs to import in order to build linux and create the .MCS file containing all the images needed to boot Linux *(FSBL, U-boot, Kernel, rootfs, Device-tree)*
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
