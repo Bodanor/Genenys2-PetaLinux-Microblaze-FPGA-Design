@@ -81,11 +81,11 @@ For the others, follow the instructions bellow to generate the project in order 
 ### Prerequisites
 
 
-* Vivado 2025.1 Design suite
+* **<ins>Vivado 2025.1 Design suite** </ins>
   
   In order to have a design and to generate the project, the developer must have Vivado 2025.1 Design suite install on it's computer. Now, if that's not possible, feel free to open an issue and propose a solution or I'll see what I can do about it. Unfortunately, the Genesys 2 kintex-7 has an FPGA that uses the priced Vivado suite :(
 
-* Having the Digilent board files installed in Vivado for the Genesys 2 Kintex-7
+* **<ins>Having the Digilent board files installed in Vivado for the Genesys 2 Kintex-7** </ins>
 
   Digilent provides boards files to ease ease the design inside Vivado. Yes this makes it easier for sure, but in that case we only need those boards files for the constraint files. Later on, I'll probably include the constraints in a seperate files inside the project but for now, vivado uses the one provided by digilent in the board files.
 
