@@ -26,33 +26,35 @@
 
   </p>
 <!-- TABLE OF CONTENTS -->
-Table of Contents
-<ol>
-  <li><a href="#about-the-project">About The Project</a></li>
-  <li>
-    <a href="#getting-started">Getting Started</a>
-    <ul>
-      <li><a href="#prerequisites">Prerequisites</a></li>
-    </ul>
-  </li>
-  <li><a href="#generating-the-project">Generating the project</a></li>
-  <li>
-    <a href="#export-the-hardware">Export the Hardware</a>
-    <ul>
-      <li><a href="#steps-to-export-the-hardware">Steps to export the hardware</a></li>
-    </ul>
-  </li>
-  <li><a href="#results">Results</a></li>
-  <li>
-    <a href="#roadmap">Roadmap</a>
-    <ul>
-      <li><a href="#ip-cores-implemented">IP Cores implemented</a></li>
-      <li><a href="#planned">Planned</a></li>
-    </ul>
-  </li>
-  <li><a href="#contributing">Contributing</a></li>
-  <li><a href="#contact">Contact</a></li>
-</ol>
+<details>
+<summary>Table of Contents</summary>
+  <ol>
+    <li><a href="#about-the-project">About The Project</a></li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+      </ul>
+    </li>
+    <li><a href="#generating-the-project">Generating the project</a></li>
+    <li>
+      <a href="#export-the-hardware">Export the Hardware</a>
+      <ul>
+        <li><a href="#steps-to-export-the-hardware">Steps to export the hardware</a></li>
+      </ul>
+    </li>
+    <li><a href="#results">Results</a></li>
+    <li>
+      <a href="#roadmap">Roadmap</a>
+      <ul>
+        <li><a href="#ip-cores-implemented">IP Cores implemented</a></li>
+        <li><a href="#planned">Planned</a></li>
+      </ul>
+    </li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
 
 
 
@@ -82,6 +84,15 @@ For the others, follow the instructions bellow to generate the project in order 
 * Vivado 2025.1 Design suite
   
   In order to have a design and to generate the project, the developer must have Vivado 2025.1 Design suite install on it's computer. Now, if that's not possible, feel free to open an issue and propose a solution or I'll see what I can do about it. Unfortunately, the Genesys 2 kintex-7 has an FPGA that uses the priced Vivado suite :(
+
+* Having the Digilent board files installed in Vivado for the Genesys 2 Kintex-7
+
+  Digilent provides boards files to ease ease the design inside Vivado. Yes this makes it easier for sure, but in that case we only need those boards files for the constraint files. Later on, I'll probably include the constraints in a seperate files inside the project but for now, vivado uses the one provided by digilent in the board files.
+
+  In order to install those, download or clone the [digilent board repo file](https://github.com/Digilent/vivado-boards). Then copy all eveything that is inside the **new/boards_files** folder to :
+  ```
+    <base_vivado_install_dir>/data/xhub/boards/XilinxBoardStore/boards/Xilinx
+  ```
 
 ## Generating the Project
 
